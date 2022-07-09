@@ -51,7 +51,7 @@
           "announcement_bar_home_page_only": true,
           "announcement_bar_text": "test link",
           "announcement_bar_link": "",
-          "logo": "shopify:\/\/shop_images\/Vector.png",
+          "logo": "shopify:\/\/shop_images\/Group_2.png",
           "logo_max_width": 450,
           "menu": ""
         }
@@ -66,7 +66,6 @@
       "165531059468e5c8e7": {
         "type": "hero-section",
         "settings": {
-          "image": "shopify:\/\/shop_images\/Group_305.png",
           "layout": "left",
           "title": "SAVE UP TO 55% ON NOOCUB<br> EGG-CELLENT EASTER DEALS OUT NOW",
           "text": "<p>Hero image + text block<\/p>",
