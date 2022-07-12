@@ -28,6 +28,7 @@ module.exports = {
     },
     borderRadius:{
       'rounded-3': '3px',
+      '20': '30px'
     },
     boxShadow:{
       "1": 'box-shadow: 0px 3.6213px 24.4438px rgba(0, 0, 0, 0.25);'
