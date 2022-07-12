@@ -6,7 +6,6 @@
       <h2 class="pl-1 pr-1 text-[26px] font-bold uppercase text-center text-white sm:text-[35px] md:leading-10 leading-9">{{ section.settings.title }}</h2>
     {% endif %}
   </div>
-      <div class="">
         <div class="flex items-center justify-center relative flex-col">
             <div class="relative md:hidden">
                 {% if section.settings.image != blank %}
@@ -43,7 +42,6 @@
               {% endif %}
           </div>
       </div>
-    </div>
   
     <div class="pl-2 relative hidden md:block mb-9">
       {% if section.settings.title != blank %}
@@ -60,7 +58,7 @@
       
     </div>
     </div>
-    <div>
+    <div class="flex justify-center mt-2 mb-6">
       {% if section.settings.image_payments != blank %}
                 {% include 'responsive-image-mobile' with
                     image: section.settings.image_payments,
@@ -100,7 +98,7 @@
         "type": "text",
         "id": "button_label",
         "label": "Button label"
-      },
+      }
     ],
     "presets": [
       {
