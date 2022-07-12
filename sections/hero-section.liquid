@@ -60,6 +60,18 @@
       
     </div>
     </div>
+    <div>
+      {% if section.settings.image_payments != blank %}
+                {% include 'responsive-image-mobile' with
+                    image: section.settings.image_payments,
+                    image_class: "img",
+                    max_width: 223,
+                    max_height: 30
+                %}
+                {% else %}
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                {% endif %}
+    </div>
 
   </section>
 </div>
@@ -72,6 +84,11 @@
         "type": "image_picker",
         "id": "image",
         "label": "Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_payments",
+        "label": "Image with Payment methods"
       },
       {
         "type": "textarea",
