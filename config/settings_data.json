@@ -78,25 +78,11 @@
           "title": "DON'T WAIT FOR THE EASTER BUNNY TO BRING YOURS! <br><span class=\"md:text-[40px] font-black font-montserrat md:font-futura md:font-bold\">ORDER NOOCUBE TODAY!<\/span>",
           "collection": "main"
         }
-      },
-      "1657788108cea8384d": {
-        "type": "iconboxday",
-        "disabled": true,
-        "settings": {
-        }
-      },
-      "165778811358b95a08": {
-        "type": "iconboxnight",
-        "disabled": true,
-        "settings": {
-        }
       }
     },
     "content_for_index": [
       "165531059468e5c8e7",
-      "1655418599ba041d04",
-      "165778811358b95a08",
-      "1657788108cea8384d"
+      "1655418599ba041d04"
     ]
   },
   "presets": {
