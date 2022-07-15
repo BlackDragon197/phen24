@@ -81,11 +81,13 @@
       },
       "1657788108cea8384d": {
         "type": "iconboxday",
+        "disabled": true,
         "settings": {
         }
       },
       "165778811358b95a08": {
         "type": "iconboxnight",
+        "disabled": true,
         "settings": {
         }
       }
@@ -93,8 +95,8 @@
     "content_for_index": [
       "165531059468e5c8e7",
       "1655418599ba041d04",
-      "1657788108cea8384d",
-      "165778811358b95a08"
+      "165778811358b95a08",
+      "1657788108cea8384d"
     ]
   },
   "presets": {
