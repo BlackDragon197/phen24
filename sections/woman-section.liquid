@@ -1,24 +1,24 @@
 <div class="relative">
 <section id="section-123" class="flex flex-col items-end justify-center">
-<div class="ml-4 mt-60">
-    <div class="mr-2">
-        <h2 class="font-bold">The #1 Reason Why Most Diets Fail</h2>
-        <p>We surveyed hundreds of people and asked them this question...</p>
-        <p class="font-bold">What's your #1 weight loss challenge?</p>
-        <p>And without a doubt, the top answer we heard from people (all over the world) was...</p>
-        <h4 class="font-bold">Cravings, snacking, and overeating — at night!</h4>
-        <p>It's sooooo easy to give in to night time temptations after the demands of the day have worn down your willpower...</p>
-        <p>When everything in your body is screaming for that extra helping of dessert (or a late night snack).</p>
-        <p>So if you've tried to say NO to night time snacking in the past, but your favorite treats always seem to get the best of you, 
+<div class="ml-4 mt-60 mb-5 text-white">
+    <div class="mr-2 ">
+        <h2 class="font-bold text-3xl mb-4">The #1 Reason Why Most Diets Fail</h2>
+        <p class="text-sm mb-4">We surveyed hundreds of people and asked them this question...</p>
+        <p class="font-bold text-sm mb-4">What's your #1 weight loss challenge?</p>
+        <p class="text-sm mb-5">And without a doubt, the top answer we heard from people (all over the world) was...</p>
+        <h4 class="font-bold text-xl mb-4">Cravings, snacking, and overeating — at night!</h4>
+        <p class="text-sm mb-4">It's sooooo easy to give in to night time temptations after the demands of the day have worn down your willpower...</p>
+        <p class="text-sm mb-4">When everything in your body is screaming for that extra helping of dessert (or a late night snack).</p>
+        <p class="text-sm">So if you've tried to say NO to night time snacking in the past, but your favorite treats always seem to get the best of you, 
             then I want you to know... </p>
     </div>
-    <div class="flex flex-row justify-between items-start gap-2">
-        <div>
-            <h4>Hope is here!</h4>
+    <div class="flex flex-row justify-between items-center gap-2">
+        <div class="w-1/2">
+            <h4 class="font-bold text-xl">Hope is here!</h4>
             <p>The scientists at PHEN24 have created a new formula that specifically targets night time cravings — 
                 plus many more of the challenges that stop people from getting rid of their unwanted weight.</p>
         </div>
-        <div>
+        <div class="w-1/2">
             {% if section.settings.image_bottles != blank %}
             {% include 'responsive-image-mobile' with
                     image: section.settings.image_bottles,
@@ -30,10 +30,10 @@
         </div>
     </div>
 </div>
-<div class="relative max-6 flex justify-center items-center mx-6">
+<div class="relative flex justify-center items-center mx-6">
     <a class="w-full text-[22px] justify-center text-white flex max-w-[43rem] items-center py-4 whitespace-nowrap px-12 rounded-20 
     font-normal bg-green-500 uppercase" href="#some_id">
-      Order <span class="font-bold">now</span> <span class="font-bold">now</span> <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+      Order <span class="font-bold"> now</span> <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 6.5L0.75 12.9952L0.750001 0.00480889L12 6.5Z" fill="black"/>
         </svg>
     </a>
@@ -51,7 +51,7 @@
         "type": "image_picker",
         "id": "image_bottles",
         "label": "Image Bottles"
-      }
+    }
     ],
     "presets": [
       {
