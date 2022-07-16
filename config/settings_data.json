@@ -78,11 +78,17 @@
         "settings": {
           "image_bottles": "shopify:\/\/shop_images\/Group_135.png"
         }
+      },
+      "165797294902a90865": {
+        "type": "iconboxday",
+        "settings": {
+        }
       }
     },
     "content_for_index": [
       "165531059468e5c8e7",
-      "1657969525894b67b3"
+      "1657969525894b67b3",
+      "165797294902a90865"
     ]
   },
   "presets": {
