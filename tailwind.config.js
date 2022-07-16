@@ -36,6 +36,9 @@ module.exports = {
     extend: {
       
     },
+    borderWidth:{
+      '3': 'border-width: 3px;'
+    },
     screens: {
       'xs': '375px',
       'sm': '768px',
