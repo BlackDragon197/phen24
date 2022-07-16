@@ -72,10 +72,16 @@
           "button_label": "",
           "image_bottle": "shopify:\/\/shop_images\/Group_131.png"
         }
+      },
+      "1657969525894b67b3": {
+        "type": "woman-section",
+        "settings": {
+        }
       }
     },
     "content_for_index": [
-      "165531059468e5c8e7"
+      "165531059468e5c8e7",
+      "1657969525894b67b3"
     ]
   },
   "presets": {
