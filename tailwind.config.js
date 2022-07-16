@@ -13,8 +13,7 @@ module.exports = {
   ],
   theme: {
     fontFamily:{
-      "futura": "Futura PT",
-      "montserrat": "'Montserrat', sans-serif",
+
     },
     maxWidth:{
       '1410': '1410px',
