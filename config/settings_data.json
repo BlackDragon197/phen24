@@ -73,17 +73,16 @@
           "image_bottle": "shopify:\/\/shop_images\/Group_131.png"
         }
       },
-      "1655418599ba041d04": {
-        "type": "featured-collection",
+      "1657969525894b67b3": {
+        "type": "woman-section",
         "settings": {
-          "title": "DON'T WAIT FOR THE EASTER BUNNY TO BRING YOURS! <br><span class=\"md:text-[40px] font-black font-montserrat md:font-futura md:font-bold\">ORDER NOOCUBE TODAY!<\/span>",
-          "collection": "main"
+          "image_bottles": "shopify:\/\/shop_images\/Group_135.png"
         }
       }
     },
     "content_for_index": [
       "165531059468e5c8e7",
-      "1655418599ba041d04"
+      "1657969525894b67b3"
     ]
   },
   "presets": {
