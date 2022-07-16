@@ -846,12 +846,6 @@ video {
 .text-center {
   text-align: center;
 }
-.font-montserrat {
-  font-family: 'Montserrat', sans-serif;
-}
-.font-futura {
-  font-family: Futura PT;
-}
 .text-\[22px\] {
   font-size: 22px;
 }
@@ -976,10 +970,6 @@ video {
 
   .md\:pt-20 {
     padding-top: 5rem;
-  }
-
-  .md\:font-futura {
-    font-family: Futura PT;
   }
 
   .md\:text-\[40px\] {
