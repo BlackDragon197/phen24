@@ -615,17 +615,20 @@ video {
 .mb-9 {
   margin-bottom: 2.25rem;
 }
+.mr-2 {
+  margin-right: 0.5rem;
+}
 .mb-6 {
   margin-bottom: 1.5rem;
+}
+.mt-3 {
+  margin-top: 0.75rem;
 }
 .ml-4 {
   margin-left: 1rem;
 }
 .mt-60 {
   margin-top: 15rem;
-}
-.mr-2 {
-  margin-right: 0.5rem;
 }
 .mb-4 {
   margin-bottom: 1rem;
@@ -907,6 +910,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 @media (min-width: 375px) {
 

@@ -32,6 +32,9 @@ module.exports = {
     boxShadow:{
       "1": 'box-shadow: 0px 3.6213px 24.4438px rgba(0, 0, 0, 0.25);'
     },
+    borderWidth:{
+      '3': 'border-width: 3px'
+    },
     extend: {
       
     },
