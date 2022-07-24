@@ -612,6 +612,10 @@ video {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
 }
+.mx-14 {
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+}
 .mb-7 {
   margin-bottom: 1.75rem;
 }
@@ -802,6 +806,10 @@ video {
 .bg-cyan-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(34 211 238 / var(--tw-bg-opacity));
+}
+.bg-orange-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
 }
 .bg-black {
   --tw-bg-opacity: 1;
