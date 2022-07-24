@@ -37,7 +37,7 @@ module.exports = {
     },
     extend: {
       skew: {
-        '15': '15deg'
+        '15': '15deg',
       }
       
     },
