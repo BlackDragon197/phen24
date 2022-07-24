@@ -1,15 +1,15 @@
 <div class="relative">
     <section class="relative">
         <div class="flex flex-col relative items-center">
-            <div class="relative flex text-3xl items-center my-3 text-center">
+            <div class="relative flex text-3xl items-center my-3 text-center font-bold">
                 <h1>The 24/7 Weight <br/> Loss Support The <br/>World's Been <br/>Waiting For!</h1>
             </div>
             <div class="relative flex items-center text-base mx-14 text-center">
                 <p>While other products assist you during 
-                    <br/>the day or the night — PHEN24 doubles 
-                    <br/>your fat burning power by flooding your 
-                    <br/>body with metabolism boosting,  
-                    <br/>appetite shrinking ingredients every hour of every day. 
+                    the day or the night — PHEN24 doubles 
+                    your fat burning power by flooding your 
+                    body with metabolism boosting,  
+                    appetite shrinking ingredients every hour of every day. 
                 </p>
             </div>
             <div class="relative -top-6">
@@ -23,27 +23,26 @@
             {% endif %}
             </div>
         </div>
-        <div>
-            <div class="-skew-y-15 bg-orange-500">
-                <div class="skew-y-15 flex flex-row">
-                    <div class="flex flex-col items-center justify-center">
-                        <h3>THE DAY FORMULA</h3>
-                        <p>The DAY formula kick-starts your metabolism in the morning, and keeps it going strong all day long... even if you're stuck at your desk and you can't get to the gym.
-                            </p>
-                    </div>
-                    <div class="flex items-center justify-center">
-                        {% if section.settings.bottle != blank %}
-                        {% include 'responsive-image' with
-                            image: section.settings.bottle,
-                            image_class: "",
-                            max_width: 143,
-                            max_height: 266
-                        %}
-                        {% endif %}
-                    </div>
+        <div class="-skew-y-15 bg-orange-500">
+            <div class="skew-y-15 flex flex-row">
+                <div class="flex flex-col items-center justify-center">
+                    <h3>THE DAY FORMULA</h3>
+                    <p>The DAY formula kick-starts your metabolism in the morning, and keeps it going strong all day long... even if you're stuck at your desk and you can't get to the gym.
+                        </p>
+                </div>
+                <div class="flex items-center justify-center">
+                    {% if section.settings.bottle != blank %}
+                    {% include 'responsive-image' with
+                        image: section.settings.bottle,
+                        image_class: "",
+                        max_width: 143,
+                        max_height: 266
+                    %}
+                    {% endif %}
                 </div>
             </div>
         </div>
+        
     </section>
 </div>
 
