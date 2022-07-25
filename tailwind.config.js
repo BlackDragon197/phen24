@@ -12,9 +12,6 @@ module.exports = {
     './templates/customers/*.liquid',
   ],
   theme: {
-    colors:{
-      'heading-bg': 'linear-gradient(180deg, #EEEFF3 61.98%, rgba(238, 239, 243, 0) 100%);'
-    },
     fontFamily:{
 
     },
@@ -41,6 +38,9 @@ module.exports = {
     extend: {
       skew: {
         '15': '15deg',
+      },
+      colors:{
+        'heading-bg': 'linear-gradient(180deg, #EEEFF3 61.98%, rgba(238, 239, 243, 0) 100%);',
       }
       
     },
