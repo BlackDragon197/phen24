@@ -838,7 +838,7 @@ video {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 .bg-heading-bg {
-  background-image: linear-gradient(180deg, #EEEFF3 61.98%, rgba(238, 239, 243, 0) 100%);
+  background-image: linear-gradient(180deg, #EEEFF3 61.98%, rgba(238, 239, 243, 0) 100%);;
 }
 .from-cyan-500 {
   --tw-gradient-from: #06b6d4;
