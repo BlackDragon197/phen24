@@ -1,10 +1,10 @@
 <div class="relative">
     <section class="relative">
-        <div class="flex flex-col relative items-center">
-            <div class="relative flex text-3xl items-center my-3 text-center font-bold">
+        <div class="flex flex-col absolute items-center">
+            <div class="relative flex text-3xl items-center my-3 text-center font-bold z-10">
                 <h1>The 24/7 Weight <br/> Loss Support The <br/>World's Been <br/>Waiting For!</h1>
             </div>
-            <div class="relative flex items-center text-base mx-14 text-center">
+            <div class="relative flex items-center text-base mx-14 text-center z-10">
                 <p>While other products assist you during 
                     the day or the night — PHEN24 doubles 
                     your fat burning power by flooding your 
@@ -12,7 +12,7 @@
                     appetite shrinking ingredients every hour of every day. 
                 </p>
             </div>
-            <div class="relative -top-6">
+            <div class="relative -top-44 z-0">
                 {% if section.settings.woman != blank %}
             {% include 'responsive-image' with
                     image: section.settings.woman,
@@ -23,11 +23,11 @@
             {% endif %}
             </div>
         </div>
-        <div class="-skew-y-15 bg-orange-500">
+        <div class="relative -top-20 -skew-y-15 bg-orange-500">
             <div class="skew-y-15 flex flex-row">
-                <div class="flex flex-col items-center justify-center">
-                    <h3>THE DAY FORMULA</h3>
-                    <p>The DAY formula kick-starts your metabolism in the morning, and keeps it going strong all day long... even if you're stuck at your desk and you can't get to the gym.
+                <div class="flex flex-col items-center justify-center ml-6">
+                    <h3 class="font-bold text-lg">THE DAY FORMULA</h3>
+                    <p class="font-normal text-sm">The DAY formula kick-starts your metabolism in the morning, and keeps it going strong all day long... even if you're stuck at your desk and you can't get to the gym.
                         </p>
                 </div>
                 <div class="flex items-center justify-center">
