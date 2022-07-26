@@ -1,0 +1,79 @@
+<div class="relative">
+    <section class="relative">
+        <div class="relative -top-20 -skew-y-15 bg-violet-500">
+            <div class="skew-y-15 flex flex-row">
+                <div class="flex items-center justify-center">
+                    {% if section.settings.bottle != blank %}
+                    {% include 'responsive-image' with
+                        image: section.settings.bottle,
+                        image_class: "",
+                        max_width: 151,
+                        max_height: 274
+                    %}
+                    {% endif %}
+                </div>
+                <div class="flex flex-col items-start justify-center ml-6 text-white">
+                    <h3 class="font-bold text-lg">THE NIGHT FORMULA</h3>
+                    <p class="font-normal text-sm">The NIGHT formula burns even more fat with special ingredients that won't keep you awake, while also helping you overcome the late night munchies that may have derailed you in the past.
+                        </p>
+                </div>
+            </div>
+        </div>
+        <div class="relative">
+            <div class="relative">
+            {% if section.settings.pair != blank %}
+                {% include 'responsive-image' with
+                    image: section.settings.pair,
+                    image_class: "",
+                    max_width: 375,
+                    max_height: 777
+                %}
+                {% endif %}
+            </div>
+            <div class="relative -top-40 bg-violet-section-bg">
+                <div class="relative top-14 flex justify-center items-center mx-2 text-white font-normal text-sm">
+                    <p>You'll be amazed at how much easier it is to lose weight when PHEN24 is revving up your metabolism 24 hours a day, 7 days a week.
+                        </p>
+                </div>
+                <div class="relative flex justify-center items-center">
+                    <p>This is your best chance to finally achieve the weight loss results you've been looking for!
+                        </p>
+                </div>
+                <div class="w-full flex justify-center items-center relative bg-black pb-8">
+                    <div class="relative flex justify-center place-items-center">
+                        <a class="w-full text-lg justify-center text-black flex max-w-[43rem] items-center py-2 whitespace-nowrap px-12 rounded-20 
+                        font-normal bg-green-500 uppercase" href="#some_id">
+                        Order <span class="font-bold mr-2"> now</span> <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 6.5L0.75 12.9952L0.750001 0.00480889L12 6.5Z" fill="black"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+</div>
+
+{% schema %}
+{
+    "name": "Violet-skew-section",
+    "settings": [
+    {
+        "type": "image_picker",
+        "id": "pair",
+        "label": "Pair Image"
+    },
+    {
+        "type": "image_picker",
+        "id": "bottle",
+        "label": "Bottle"
+    }
+    ],
+    "presets": [
+      {
+        "name": "Violetskewsection"
+      }
+    ]
+  }
+{% endschema %}
