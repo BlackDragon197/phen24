@@ -85,12 +85,20 @@
           "woman": "shopify:\/\/shop_images\/Rectangle_151.png",
           "bottle": "shopify:\/\/shop_images\/Phen24_Day_Mock-Up_3.png"
         }
+      },
+      "16588244346ef3cf34": {
+        "type": "violet-section",
+        "settings": {
+          "pair": "shopify:\/\/shop_images\/AdobeStock_307814326_1.png",
+          "bottle": "shopify:\/\/shop_images\/Phen24_Night_Mock-Up_3.png"
+        }
       }
     },
     "content_for_index": [
       "165531059468e5c8e7",
       "1657969525894b67b3",
-      "1658702287e366254b"
+      "1658702287e366254b",
+      "16588244346ef3cf34"
     ]
   },
   "presets": {
