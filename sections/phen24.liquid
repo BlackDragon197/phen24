@@ -1,0 +1,35 @@
+<div class="relative">
+    <section class="relative mx-3">
+        <h1 class="font-bold text-3xl text-center">PHEN 24</h1>
+        <h1 class="font-normal text-3xl text-center mb-4">Never Stops Working <br/>For You!</h1>
+            <div class="my-4">
+                {% if section.settings.success != blank %}
+                {% include 'responsive-image' with
+                    image: section.settings.success,
+                    image_class: "",
+                    max_width: 350,
+                    max_height: 350
+                %}
+                {% endif %}
+            </div>
+    </section>
+</div>
+
+
+{% schema %}
+{
+    "name": "Phen 24 section",
+    "settings": [
+    {
+        "type": "image_picker",
+        "id": "success",
+        "label": "Success Image"
+    }
+    ],
+    "presets": [
+      {
+        "name": "Phen24section"
+      }
+    ]
+  }
+{% endschema %}

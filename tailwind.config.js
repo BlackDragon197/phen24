@@ -42,6 +42,8 @@ module.exports = {
       backgroundImage:{
         'heading-bg': 'linear-gradient(180deg, #EEEFF3 61.98%, rgba(238, 239, 243, 0) 100%);',
         'violet-section-bg' :'linear-gradient(180deg, rgba(0, 0, 0, 0) 9.96%, #000000 40.44%);',
+        'all-day': 'linear-gradient(180deg, #FF9900 0%, #EA552E 100%);',
+        'all-night': 'linear-gradient(180deg, #26AAE0 0%, #693D90 64.06%);',
       }
     },
     screens: {

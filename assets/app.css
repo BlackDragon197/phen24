@@ -585,8 +585,19 @@ video {
 .z-0 {
   z-index: 0;
 }
+.m-3 {
+  margin: 0.75rem;
+}
 .m-auto {
   margin: auto;
+}
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 .mx-4 {
   margin-left: 1rem;
@@ -608,10 +619,6 @@ video {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
-.mx-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-}
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -624,6 +631,9 @@ video {
   margin-left: 3.5rem;
   margin-right: 3.5rem;
 }
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
 .mb-7 {
   margin-bottom: 1.75rem;
 }
@@ -632,9 +642,6 @@ video {
 }
 .mt-2 {
   margin-top: 0.5rem;
-}
-.mb-5 {
-  margin-bottom: 1.25rem;
 }
 .mt-5 {
   margin-top: 1.25rem;
@@ -660,14 +667,14 @@ video {
 .ml-6 {
   margin-left: 1.5rem;
 }
+.mb-4 {
+  margin-bottom: 1rem;
+}
 .ml-4 {
   margin-left: 1rem;
 }
 .mt-60 {
   margin-top: 15rem;
-}
-.mb-4 {
-  margin-bottom: 1rem;
 }
 .block {
   display: block;
@@ -789,11 +796,11 @@ video {
 .whitespace-nowrap {
   white-space: nowrap;
 }
-.rounded-rounded-3 {
-  border-radius: 3px;
-}
 .rounded-20 {
   border-radius: 30px;
+}
+.rounded-rounded-3 {
+  border-radius: 3px;
 }
 .border-3 {
   border-width: 3px;
@@ -843,6 +850,12 @@ video {
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+.bg-all-day {
+  background-image: linear-gradient(180deg, #FF9900 0%, #EA552E 100%);;
+}
+.bg-all-night {
+  background-image: linear-gradient(180deg, #26AAE0 0%, #693D90 64.06%);;
 }
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
@@ -917,6 +930,10 @@ video {
 .text-center {
   text-align: center;
 }
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
 .text-\[22px\] {
   font-size: 22px;
 }
@@ -938,10 +955,6 @@ video {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -949,6 +962,9 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+.font-bold {
+  font-weight: 700;
 }
 .font-normal {
   font-weight: 400;
@@ -959,20 +975,17 @@ video {
 .font-black {
   font-weight: 900;
 }
-.font-bold {
-  font-weight: 700;
-}
 .uppercase {
   text-transform: uppercase;
 }
 .italic {
   font-style: italic;
 }
-.leading-9 {
-  line-height: 2.25rem;
-}
 .leading-none {
   line-height: 1;
+}
+.leading-9 {
+  line-height: 2.25rem;
 }
 .text-white {
   --tw-text-opacity: 1;
