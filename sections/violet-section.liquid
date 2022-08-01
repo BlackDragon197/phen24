@@ -6,13 +6,13 @@
                     {% if section.settings.bottle != blank %}
                     {% include 'responsive-image' with
                         image: section.settings.bottle,
-                        image_class: "",
+                        image_class: "object-contain",
                         max_width: 151,
                         max_height: 274
                     %}
                     {% endif %}
                 </div>
-                <div class="flex flex-col items-start justify-center ml-6 text-white">
+                <div class="flex flex-col items-start justify-center ml-4 text-white">
                     <h3 class="font-bold text-lg">THE NIGHT FORMULA</h3>
                     <p class="font-normal text-sm">The NIGHT formula burns even more fat with special ingredients that won't keep you awake, while also helping you overcome the late night munchies that may have derailed you in the past.
                         </p>
@@ -30,12 +30,13 @@
                 %}
                 {% endif %}
             </div>
+            <div class="object-contain"></div>
             <div class="relative -top-40 bg-violet-section-bg">
-                <div class="relative top-14 flex justify-center items-center mx-2 text-white font-normal text-sm">
+                <div class="relative mt-14 flex justify-center items-center mx-2 text-white font-normal text-sm">
                     <p>You'll be amazed at how much easier it is to lose weight when PHEN24 is revving up your metabolism 24 hours a day, 7 days a week.
                         </p>
                 </div>
-                <div class="relative flex justify-center items-center">
+                <div class="relative flex justify-center items-center mx-2 text-white text-sm">
                     <p>This is your best chance to finally achieve the weight loss results you've been looking for!
                         </p>
                 </div>
