@@ -82,7 +82,8 @@
       "1658702287e366254b": {
         "type": "orange-section",
         "settings": {
-          "woman": "shopify:\/\/shop_images\/Rectangle_151.png"
+          "woman": "shopify:\/\/shop_images\/Rectangle_151.png",
+          "bottle1": "shopify:\/\/shop_images\/Phen24_Day_Mock-Up_3.png"
         }
       }
     },
