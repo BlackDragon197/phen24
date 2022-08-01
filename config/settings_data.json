@@ -82,36 +82,14 @@
       "1658702287e366254b": {
         "type": "orange-section",
         "settings": {
-          "woman": "shopify:\/\/shop_images\/Rectangle_151.png",
-          "bottle": "shopify:\/\/shop_images\/Phen24_Day_Mock-Up_3.png"
-        }
-      },
-      "16588244346ef3cf34": {
-        "type": "violet-section",
-        "settings": {
-          "pair": "shopify:\/\/shop_images\/AdobeStock_307814326_1.png",
-          "bottle": "shopify:\/\/shop_images\/Phen24_Night_Mock-Up_3.png"
-        }
-      },
-      "1659019423165fc7b1": {
-        "type": "phen24",
-        "settings": {
-          "success": "shopify:\/\/shop_images\/Rectangle_141.png"
-        }
-      },
-      "1659019435c25285e0": {
-        "type": "day-night",
-        "settings": {
+          "woman": "shopify:\/\/shop_images\/Rectangle_151.png"
         }
       }
     },
     "content_for_index": [
       "165531059468e5c8e7",
       "1657969525894b67b3",
-      "1658702287e366254b",
-      "16588244346ef3cf34",
-      "1659019423165fc7b1",
-      "1659019435c25285e0"
+      "1658702287e366254b"
     ]
   },
   "presets": {
