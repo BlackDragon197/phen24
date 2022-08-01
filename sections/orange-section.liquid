@@ -44,20 +44,22 @@
         </div>
         <div class="-skew-y-15 bg-violet-500 absolute min-h-300 w-full">
         </div>
-        <div class="flex items-center justify-center">
-            {% if section.settings.bottle != blank %}
-            {% include 'responsive-image' with
-                image: section.settings.bottle,
-                image_class: "object-contain",
-                max_width: 151,
-                max_height: 274
-            %}
-            {% endif %}
-        </div>
-        <div class="flex flex-col items-start justify-center ml-4 text-white">
-            <h3 class="font-bold text-lg">THE NIGHT FORMULA</h3>
-            <p class="font-normal text-sm">The NIGHT formula burns even more fat with special ingredients that won't keep you awake, while also helping you overcome the late night munchies that may have derailed you in the past.
-                </p>
+        <div class="flex flex-row">
+            <div class="flex items-center justify-center">
+                {% if section.settings.bottle != blank %}
+                {% include 'responsive-image' with
+                    image: section.settings.bottle,
+                    image_class: "object-contain",
+                    max_width: 151,
+                    max_height: 274
+                %}
+                {% endif %}
+            </div>
+            <div class="flex flex-col items-start justify-center ml-4 text-white">
+                <h3 class="font-bold text-lg">THE NIGHT FORMULA</h3>
+                <p class="font-normal text-sm">The NIGHT formula burns even more fat with special ingredients that won't keep you awake, while also helping you overcome the late night munchies that may have derailed you in the past.
+                    </p>
+            </div>
         </div>
         <div class="relative">
             <div class="relative">
