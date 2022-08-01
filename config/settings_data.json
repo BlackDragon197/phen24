@@ -83,7 +83,9 @@
         "type": "orange-section",
         "settings": {
           "woman": "shopify:\/\/shop_images\/Rectangle_151.png",
-          "bottle1": "shopify:\/\/shop_images\/Phen24_Day_Mock-Up_3.png"
+          "bottle1": "shopify:\/\/shop_images\/Phen24_Day_Mock-Up_3.png",
+          "pair": "shopify:\/\/shop_images\/AdobeStock_307814326_1.png",
+          "bottle": "shopify:\/\/shop_images\/Phen24_Night_Mock-Up_3.png"
         }
       }
     },
