@@ -65,14 +65,16 @@
         </div>
         <div class="relative z-0">
             <div class="relative">
-            {% if section.settings.pair != blank %}
-                {% include 'responsive-image' with
-                    image: section.settings.pair,
-                    image_class: "",
-                    max_width: 375,
-                    max_height: 777
-                %}
-                {% endif %}
+                <div class="pair-bg  min-h-740"> 
+                    <!-- {% if section.settings.pair != blank %}
+                        {% include 'responsive-image' with
+                            image: section.settings.pair,
+                            image_class: "",
+                            max_width: 375,
+                            max_height: 777
+                        %}
+                        {% endif %} -->
+                    </div>
             </div>
             <div class="object-contain"></div>
             <div class="relative -top-40 bg-violet-section-bg">
