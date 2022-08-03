@@ -98,11 +98,11 @@
                 </div>
             </div>
         </div>
-        <style>
-            .pair-bg{
-                background-image: url('{{ section.settings.pair }}');
+        {% style %}
+            .pair-bg{ 
+                background-image: url({{section.settings.pair}});
             }
-        </style>
+        {% endstyle %}
     </section>
 </div>
 
