@@ -84,15 +84,28 @@
         "settings": {
           "woman": "shopify:\/\/shop_images\/Rectangle_151.png",
           "bottle1": "shopify:\/\/shop_images\/Phen24_Day_Mock-Up_3.png",
-          "pair": "shopify:\/\/shop_images\/AdobeStock_307814326_1.png",
+          "pair": "shopify:\/\/shop_images\/AdobeStock_273856503_1_1.png",
           "bottle": "shopify:\/\/shop_images\/Phen24_Night_Mock-Up_3.png"
+        }
+      },
+      "1659313964a4a717d8": {
+        "type": "phen24",
+        "settings": {
+          "success": "shopify:\/\/shop_images\/Rectangle_141.png"
+        }
+      },
+      "16593139842c78691b": {
+        "type": "day-night",
+        "settings": {
         }
       }
     },
     "content_for_index": [
       "165531059468e5c8e7",
       "1657969525894b67b3",
-      "1658702287e366254b"
+      "1658702287e366254b",
+      "1659313964a4a717d8",
+      "16593139842c78691b"
     ]
   },
   "presets": {
