@@ -100,7 +100,7 @@
         </div>
         {% style %}
             .pair-bg{ 
-                background-image: url({{section.settings.pair}});
+                background-image:url('{{ section.settings.pair.src | img_url: 'master' }}');
             }
         {% endstyle %}
     </section>
