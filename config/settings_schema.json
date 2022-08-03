@@ -29,6 +29,16 @@
     ]
   },
   {
+    "name": "Section settings",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "pair_image",
+        "label": "Image"
+      }
+    ]
+  }
+  {
     "name": "Colors",
     "settings": [
       {

@@ -23,6 +23,7 @@ module.exports = {
     },
     minHeight:{
       '300': '300px',
+      '740': '740px'
     },
     minWidth:{
       '380': '380px',
@@ -53,8 +54,7 @@ module.exports = {
       'xs': '375px',
       'sm': '768px',
       'md': '1024px',
-      'lg': '1280px',
-      'xl': '1440px',
+      'lg': '1440px',
     },
 
   },

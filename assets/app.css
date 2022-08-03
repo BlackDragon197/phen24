@@ -534,12 +534,6 @@ video {
     max-width: 1024px;
   }
 }
-@media (min-width: 1280px) {
-
-  .container {
-    max-width: 1280px;
-  }
-}
 @media (min-width: 1440px) {
 
   .container {
@@ -712,6 +706,9 @@ video {
 }
 .min-h-300 {
   min-height: 300px;
+}
+.min-h-740 {
+  min-height: 740px;
 }
 .w-full {
   width: 100%;
@@ -1119,7 +1116,7 @@ video {
     line-height: 2.5rem;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
 
   .lg\:font-extrabold {
     font-weight: 800;
