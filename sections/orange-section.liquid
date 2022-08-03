@@ -65,7 +65,7 @@
         </div>
         <div class="relative z-0">
             <div class="relative">
-                <div class="pair-bg  min-h-740"> 
+                <div class="pair-bg min-h-740 bg-no-repeat bg-cover bg-70"> 
                     <!-- {% if section.settings.pair != blank %}
                         {% include 'responsive-image' with
                             image: section.settings.pair,
@@ -98,7 +98,11 @@
                 </div>
             </div>
         </div>
-        
+        <style>
+            .pair-bg{
+                background-image: url('{{ section.settings.pair }}');
+            }
+        </style>
     </section>
 </div>
 
@@ -119,7 +123,7 @@
     {
         "type": "image_picker",
         "id": "pair",
-        "label": "Pair Image"
+        "label": "Pair Background Image"
     },
     {
         "type": "image_picker",

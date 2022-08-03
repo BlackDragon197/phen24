@@ -12,6 +12,9 @@ module.exports = {
     './templates/customers/*.liquid',
   ],
   theme: {
+    backgroundPosition: {
+      '70': '70%'
+    },
     fontFamily:{
 
     },
