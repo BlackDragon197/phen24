@@ -37,12 +37,15 @@ module.exports = {
     boxShadow:{
       "1": 'box-shadow: 0px 3.6213px 24.4438px rgba(0, 0, 0, 0.25);'
     },
-    borderWidth:{
-      '2': '2px',
-      '3': '3px',
-      '5': '5px'
-    },
+    
     extend: {
+      borderWidth:{
+        '2': '2px',
+        '3': '3px',
+        '5': '5px',
+        '15rem': '15rem solid #FF9900 78.45%',
+        '100': '100vw solid #693D90 31.98%,'
+      },
       width:{
         '150': '150px'
       },
