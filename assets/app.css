@@ -1101,13 +1101,13 @@ video {
   content: var(--tw-content);
   left: 0px;
 }
-.before\:border-l-36rem::before {
+.before\:border-l-100::before {
   content: var(--tw-content);
-  border-left-width: 36rem;
+  border-left-width: 100vw;
 }
-.before\:border-b-100::before {
+.before\:border-b-15rem::before {
   content: var(--tw-content);
-  border-bottom-width: 100vw;
+  border-bottom-width: 15rem;
 }
 .before\:border-l-br-orange::before {
   content: var(--tw-content);

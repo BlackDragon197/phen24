@@ -94,8 +94,16 @@
             </a>
         </div>
     </div>
-    <div class="relative flex h-60 w-full before:content-[''] before:absolute before:top-0 before:left-0 before:border-l-36rem before:border-l-br-orange before:border-b-100 before:border-b-br-blue">
-
+    <div class="relative flex h-60 w-full before:content-[''] before:absolute before:top-0 before:left-0 before:border-l-100 before:border-l-br-orange before:border-b-15rem before:border-b-br-blue">
+        <div class="flex justify-center items-center w-full">
+        {% if section.settings.phen24 != blank %}
+        {% include 'responsive-image' with
+            image: section.settings.phen24,
+            max_width: 311,
+            max_height: 316
+        %}
+        {% endif %}
+        </div>
     </div>
 </section>
 {% schema %}
@@ -106,36 +114,6 @@
         "type": "image_picker",
         "id": "phen24",
         "label": "Phen24 Image"
-    },
-    {
-        "type": "image_picker",
-        "id": "review1",
-        "label": "Review 1"
-    },
-    {
-        "type": "image_picker",
-        "id": "review2",
-        "label": "Review 2"
-    },
-    {
-        "type": "image_picker",
-        "id": "review3",
-        "label": "Review 3"
-    },
-    {
-        "type": "image_picker",
-        "id": "review4",
-        "label": "Review 4"
-    },
-    {
-        "type": "image_picker",
-        "id": "review5",
-        "label": "Review 5"
-    },
-    {
-        "type": "image_picker",
-        "id": "review6",
-        "label": "Review 6"
     }
     ],
     "presets": [
