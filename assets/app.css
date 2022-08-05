@@ -690,6 +690,9 @@ video {
 .mb-4 {
   margin-bottom: 1rem;
 }
+.mt-reviews {
+  margin-top: 75px;
+}
 .mt-24 {
   margin-top: 6rem;
 }
@@ -833,9 +836,6 @@ video {
 }
 .border-3 {
   border-width: 3px;
-}
-.border-5 {
-  border-width: 5px;
 }
 .border-b-\[5px\] {
   border-bottom-width: 5px;
