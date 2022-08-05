@@ -41,7 +41,8 @@ module.exports = {
     extend: {
       colors:{
         'br-orange' : 'rgb(255, 153, 0)',
-        'br-blue': 'rgb(38, 170, 224)'
+        'br-blue': 'rgb(38, 170, 224)',
+        'tx-violet': 'rgba(105, 61, 144, 1)'
       },
       borderWidth:{
         '2': '2px',
