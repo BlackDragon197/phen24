@@ -99,6 +99,12 @@
         "type": "day-night",
         "settings": {
         }
+      },
+      "1659726428fcc93c43": {
+        "type": "reviews",
+        "settings": {
+          "review1": "shopify:\/\/shop_images\/Ellipse_12.png"
+        }
       }
     },
     "content_for_index": [
@@ -106,7 +112,8 @@
       "1657969525894b67b3",
       "1658702287e366254b",
       "1659313964a4a717d8",
-      "16593139842c78691b"
+      "16593139842c78691b",
+      "1659726428fcc93c43"
     ]
   },
   "presets": {
