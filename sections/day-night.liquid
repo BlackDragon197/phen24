@@ -99,7 +99,9 @@
 <div class="relative items-center justify-center">
         {% if section.settings.phen24 != blank %}
         {% include 'responsive-image' with
-            image: section.settings.phen24
+            image: section.settings.phen24,
+            max_width: 800,
+            max_height: 506
         %}
         {% endif %}
 </div>

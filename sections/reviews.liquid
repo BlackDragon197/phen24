@@ -20,7 +20,9 @@
             <div class="absolute rounded-50 border-5 border-white -top-reviews w-150 h-150">
                 {% if section.settings.review1 != blank %}
                 {% include 'responsive-image' with
-                    image: section.settings.review1
+                    image: section.settings.review1,
+                    max_width: 150,
+                    max_height: 150
                 %}
                 {% endif %}
             </div>
@@ -95,7 +97,7 @@
     ],
     "presets": [
         {
-        "name": "Day-Night-Section"
+        "name": "Reviews-section"
         }
     ]
     }
