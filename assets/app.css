@@ -564,14 +564,14 @@ video {
 .-top-4 {
   top: -1rem;
 }
-.-top-40 {
-  top: -10rem;
-}
 .-top-reviews {
   top: -75px;
 }
 .-top-20 {
   top: -5rem;
+}
+.-top-40 {
+  top: -10rem;
 }
 .z-10 {
   z-index: 10;
@@ -684,8 +684,14 @@ video {
 .ml-4 {
   margin-left: 1rem;
 }
+.-mt-40 {
+  margin-top: -10rem;
+}
 .mt-14 {
   margin-top: 3.5rem;
+}
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 .mb-4 {
   margin-bottom: 1rem;
@@ -726,6 +732,12 @@ video {
 .min-h-740 {
   min-height: 740px;
 }
+.w-full {
+  width: 100%;
+}
+.w-\[300px\] {
+  width: 300px;
+}
 .w-\[227px\] {
   width: 227px;
 }
@@ -735,20 +747,17 @@ video {
 .w-150 {
   width: 150px;
 }
-.w-\[300px\] {
-  width: 300px;
-}
 .w-\[15\.5rem\] {
   width: 15.5rem;
+}
+.w-1\/2 {
+  width: 50%;
 }
 .min-w-\[240px\] {
   min-width: 240px;
 }
 .min-w-\[45\%\] {
   min-width: 45%;
-}
-.max-w-\[43rem\] {
-  max-width: 43rem;
 }
 .max-w-740 {
   max-width: 740px;
@@ -936,9 +945,9 @@ video {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .px-11 {
   padding-left: 2.75rem;
@@ -964,9 +973,9 @@ video {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
 }
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 .pb-8 {
   padding-bottom: 2rem;
@@ -985,6 +994,9 @@ video {
 }
 .pl-2 {
   padding-left: 0.5rem;
+}
+.pt-12 {
+  padding-top: 3rem;
 }
 .text-left {
   text-align: left;

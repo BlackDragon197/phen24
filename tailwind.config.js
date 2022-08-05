@@ -15,13 +15,6 @@ module.exports = {
     backgroundPosition: {
       '70': '70%'
     },
-    
-    height:{
-      '150': '150px'
-    },
-    width:{
-      '150': '150px'
-    },
     maxWidth:{
       '1410': '1410px',
       '380': '380px',
@@ -50,6 +43,12 @@ module.exports = {
       '5': '5px'
     },
     extend: {
+      width:{
+        '150': '150px'
+      },
+      height:{
+        '150': '150px'
+      },
       skew: {
         '15': '15deg',
       },
