@@ -104,7 +104,10 @@
         "type": "reviews",
         "settings": {
           "review1": "shopify:\/\/shop_images\/Ellipse_12.png",
-          "review2": "shopify:\/\/shop_images\/Ellipse_13.png"
+          "review2": "shopify:\/\/shop_images\/Ellipse_13.png",
+          "review3": "shopify:\/\/shop_images\/Ellipse_14.png",
+          "review4": "shopify:\/\/shop_images\/Ellipse_25.png",
+          "review5": "shopify:\/\/shop_images\/Ellipse_27.png"
         }
       }
     },
