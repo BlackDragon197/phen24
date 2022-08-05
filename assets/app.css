@@ -1111,11 +1111,13 @@ video {
 }
 .before\:border-l-br-orange::before {
   content: var(--tw-content);
-  border-left-color: #FF9900 78.45%;
+  --tw-border-opacity: 1;
+  border-left-color: rgb(255 153 0 / var(--tw-border-opacity));
 }
 .before\:border-b-br-blue::before {
   content: var(--tw-content);
-  border-bottom-color: #693D90 31.98%;
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(38 170 224 / var(--tw-border-opacity));
 }
 .before\:content-\[\'\'\]::before {
   --tw-content: '';
