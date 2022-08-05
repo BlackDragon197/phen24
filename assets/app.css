@@ -735,6 +735,9 @@ video {
 .w-150 {
   width: 150px;
 }
+.w-\[300px\] {
+  width: 300px;
+}
 .w-\[15\.5rem\] {
   width: 15.5rem;
 }
