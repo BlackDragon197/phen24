@@ -15,8 +15,12 @@ module.exports = {
     backgroundPosition: {
       '70': '70%'
     },
-    fontFamily:{
-
+    
+    height:{
+      '150': '150px'
+    },
+    width:{
+      '150': '150px'
     },
     maxWidth:{
       '1410': '1410px',
@@ -34,13 +38,15 @@ module.exports = {
     },
     borderRadius:{
       'rounded-3': '3px',
-      '20': '30px'
+      '20': '30px',
+      '50': '50%'
     },
     boxShadow:{
       "1": 'box-shadow: 0px 3.6213px 24.4438px rgba(0, 0, 0, 0.25);'
     },
     borderWidth:{
-      '3': '3px'
+      '3': '3px',
+      '5': '5px'
     },
     extend: {
       skew: {
@@ -51,7 +57,10 @@ module.exports = {
         'violet-section-bg' :'linear-gradient(180deg, rgba(0, 0, 0, 0) 9.96%, #000000 40.44%);',
         'all-day': 'linear-gradient(180deg, #FF9900 0%, #EA552E 100%);',
         'all-night': 'linear-gradient(180deg, #26AAE0 0%, #693D90 64.06%);',
-      }
+      },
+      spacing:{
+        'reviews': '75px'
+      },
     },
     screens: {
       'xs': '375px',

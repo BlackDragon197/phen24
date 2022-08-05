@@ -96,6 +96,13 @@
         </a>
     </div>
 </div>
+<div class="relative items-center justify-center">
+        {% if section.settings.phen24 != blank %}
+        {% include 'responsive-image' with
+            image: section.settings.phen24
+        %}
+        {% endif %}
+</div>
 </div>
 
 
@@ -103,7 +110,11 @@
 {
     "name": "Day Night Section",
     "settings": [
-
+    {
+        "type": "image_picker",
+        "id": "phen24",
+        "label": "Phen24 Image"
+    }
     ],
     "presets": [
       {
