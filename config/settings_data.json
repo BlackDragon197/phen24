@@ -109,6 +109,11 @@
           "review4": "shopify:\/\/shop_images\/Ellipse_25.png",
           "review5": "shopify:\/\/shop_images\/Ellipse_27.png"
         }
+      },
+      "1659733562877df1ec": {
+        "type": "formula",
+        "settings": {
+        }
       }
     },
     "content_for_index": [
@@ -117,7 +122,8 @@
       "1658702287e366254b",
       "1659313964a4a717d8",
       "16593139842c78691b",
-      "1659726428fcc93c43"
+      "1659726428fcc93c43",
+      "1659733562877df1ec"
     ]
   },
   "presets": {
