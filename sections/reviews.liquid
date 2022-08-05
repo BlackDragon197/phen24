@@ -17,7 +17,7 @@
 
     <div class="relative mt-3">
         <div class="relative flex justify-center items-center mx-3 bg-all-night mt-reviews rounded-20 mb-4">
-            <div class="absolute rounded-50 border-white -top-reviews w-150 h-150">
+            <div class="absolute rounded-50 -top-reviews w-150 h-150">
                 {% if section.settings.review1 != blank %}
                 {% include 'responsive-image' with
                     image: section.settings.review1,
@@ -52,7 +52,7 @@
             </div>
         </div>
         <div class="relative flex justify-center items-center mx-3 bg-all-night mt-reviews rounded-20 mb-4">
-            <div class="absolute rounded-50 border-white -top-reviews w-150 h-150">
+            <div class="absolute rounded-50 -top-reviews w-150 h-150">
                 {% if section.settings.review2 != blank %}
                 {% include 'responsive-image' with
                     image: section.settings.review2,
@@ -84,7 +84,7 @@
             </div>
         </div>
         <div class="relative flex justify-center items-center mx-3 bg-all-night mt-reviews rounded-20 mb-4">
-            <div class="absolute rounded-50 border-white -top-reviews w-150 h-150">
+            <div class="absolute rounded-50 -top-reviews w-150 h-150">
                 {% if section.settings.review3 != blank %}
                 {% include 'responsive-image' with
                     image: section.settings.review3,
@@ -124,8 +124,8 @@
             </svg>
         </a>
     </div>
-    <div class="relative flex justify-center place-items-center">
-        <a class="w-full text-xs justify-center text-black flex w-[15.5rem] items-center py-1 whitespace-nowrap px-8 rounded-20 
+    <div class="relative flex justify-center place-items-center mt-2">
+        <a class="w-full text-xs  justify-center border-black border-2 text-black flex w-[15.5rem] items-center py-1 whitespace-nowrap px-8 rounded-20 
         font-normal uppercase" href="#some_id">
         read more great reviews!
         </a>
