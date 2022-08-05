@@ -1101,13 +1101,21 @@ video {
   content: var(--tw-content);
   left: 0px;
 }
-.before\:border-b-15rem::before {
+.before\:border-l-15rem::before {
   content: var(--tw-content);
-  border-bottom-width: 15rem solid #FF9900 78.45%;
+  border-left-width: 15rem;
 }
-.before\:border-l-100::before {
+.before\:border-b-100::before {
   content: var(--tw-content);
-  border-left-width: 100vw solid #693D90 31.98%,;
+  border-bottom-width: 100vw;
+}
+.before\:border-l-br-orange::before {
+  content: var(--tw-content);
+  border-left-color: #FF9900 78.45%;
+}
+.before\:border-b-br-blue::before {
+  content: var(--tw-content);
+  border-bottom-color: #693D90 31.98%;
 }
 .before\:content-\[\'\'\]::before {
   --tw-content: '';

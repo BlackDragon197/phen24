@@ -39,12 +39,16 @@ module.exports = {
     },
     
     extend: {
+      colors:{
+        'br-orange' : '#FF9900 78.45%',
+        'br-blue': '#693D90 31.98%'
+      },
       borderWidth:{
         '2': '2px',
         '3': '3px',
         '5': '5px',
-        '15rem': '15rem solid #FF9900 78.45%',
-        '100': '100vw solid #693D90 31.98%,'
+        '15rem': '15rem',
+        '100': '100vw'
       },
       width:{
         '150': '150px'
