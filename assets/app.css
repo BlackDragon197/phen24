@@ -750,8 +750,8 @@ video {
 .h-11 {
   height: 2.75rem;
 }
-.h-8 {
-  height: 2rem;
+.h-9 {
+  height: 2.25rem;
 }
 .min-h-300 {
   min-height: 300px;
@@ -961,6 +961,9 @@ video {
 }
 .bg-violet-section-bg {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 9.96%, #000000 40.44%);;
+}
+.bg-table-rect {
+  background-image: linear-gradient(180deg, #FF9900 0%, #FD1111 100%);;
 }
 .from-cyan-500 {
   --tw-gradient-from: #06b6d4;
