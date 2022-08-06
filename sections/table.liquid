@@ -3,7 +3,7 @@
         <span class="font-bold"> PHEN24</span> <br/>
         is the All-Around Best Fat Burner!
     </div>
-    <div class="relative mt-7 mx-3 px-2 flex rounded-rounded-3 bg-all-night flex-row p-2 -z-20 text-white text-2xs font-bold">
+    <div class="relative mt-16 mx-3 px-2 flex rounded-rounded-3 bg-all-night flex-row p-2 -z-20 text-white text-2xs font-bold">
             <div class="flex w-1/3 flex-col">
                 <div class="flex h-11 m-2">
                     
@@ -29,7 +29,7 @@
             </div>
             <div class="w-1/6 flex-col">
                 <div class="absolute bg-table-rect h-[22rem] w-1/6 -z-10 -top-1 rounded-rounded-3">
-                    <div class="relative -top-10 w-[110%]">
+                    <div class="relative -top-12 w-[110%] -left-3">
                         {% if section.settings.bottles != blank %}
                         {% include 'responsive-image' with
                             image: section.settings.bottles,
@@ -73,6 +73,17 @@
                 </div>
             </div>
             <div class="w-1/6 flex-col">
+                <div class="absolute w-1/6 -z-10 -top-1">
+                    <div class="relative -top-12 w-[110%] -left-3">
+                        {% if section.settings.lean != blank %}
+                        {% include 'responsive-image' with
+                            image: section.settings.lean,
+                            max_width: 30,
+                            max_height: 59
+                        %}
+                        {% endif %}
+                    </div>
+                </div>
                 <div class="flex h-11 m-2 items-end">
                     <p class="font-normal text-2xs text-center">LEAN 
                         PM
@@ -107,6 +118,17 @@
                 </div>
             </div>
             <div class="w-1/6 flex-col">
+                <div class="absolute w-1/6 -z-10 -top-1">
+                    <div class="relative -top-12 w-[110%] -left-3">
+                        {% if section.settings.shread != blank %}
+                        {% include 'responsive-image' with
+                            image: section.settings.shread,
+                            max_width: 24,
+                            max_height: 58
+                        %}
+                        {% endif %}
+                    </div>
+                </div>
                 <div class="flex h-11 m-2 items-end">
                     <p class="font-normal text-2xs text-center">NIGHT 
                         SHRED
@@ -141,6 +163,17 @@
                 </div>
             </div>
             <div class="w-1/6 flex-col">
+                <div class="absolute w-1/6 -z-10 -top-1">
+                    <div class="relative -top-12 w-[110%] -left-3">
+                        {% if section.settings.revburn != blank %}
+                        {% include 'responsive-image' with
+                            image: section.settings.revburn,
+                            max_width: 33,
+                            max_height: 57
+                        %}
+                        {% endif %}
+                    </div>
+                </div>
                 <div class="flex h-11 m-2 items-end">
                     <p class="font-normal text-2xs text-center">REVBURN
                         PM
@@ -185,7 +218,22 @@
     {
         "type": "image_picker",
         "id": "bottles",
-        "label": "Success Image"
+        "label": "Bottles Image"
+    },
+    {
+        "type": "image_picker",
+        "id": "lean",
+        "label": "Lean Image"
+    },
+    {
+        "type": "image_picker",
+        "id": "shread",
+        "label": "Shread Image"
+    },
+    {
+        "type": "image_picker",
+        "id": "revburn",
+        "label": "Revbrun Image"
     }
     ],
     "presets": [

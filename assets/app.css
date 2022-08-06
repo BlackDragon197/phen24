@@ -570,8 +570,11 @@ video {
 .-top-1 {
   top: -0.25rem;
 }
-.-top-10 {
-  top: -2.5rem;
+.-top-12 {
+  top: -3rem;
+}
+.-left-3 {
+  left: -0.75rem;
 }
 .-top-20 {
   top: -5rem;
@@ -728,6 +731,9 @@ video {
 }
 .mt-24 {
   margin-top: 6rem;
+}
+.mt-16 {
+  margin-top: 4rem;
 }
 .mt-60 {
   margin-top: 15rem;
