@@ -1,0 +1,54 @@
+<section class="relative bg-all-night text-white flex justify-center">
+    <div class="relative my-7 mx-16">
+        <p class="text-3xl font-normal">How <span class="font-bold">PHEN24 </span>
+            works</p>
+    </div>
+    <div class="relative mt-4 mx-9 flex flex-col justify-center items-center">
+        <div class="text-center text-xl font-bold">
+            <p>STEP 1<span class="text-base">
+                Take it Every Morning</span></p>
+        </div>
+        <div class="mt-4">
+            {% if section.settings.image1 != blank %}
+                {% include 'responsive-image' with
+                    image: section.settings.image1,
+                    max_width: 307,
+                    max_height: 307
+                %}
+                {% endif %}
+        </div>
+        <div class="mt-5 mb-9 text-center font-bold">
+            <p class="text-sm"></p>
+        </div>
+    </div>
+</section>
+
+
+
+{% schema %}
+{
+    "name": "Phen Works section",
+    "settings": [
+    {
+        "type": "image_picker",
+        "id": "image1",
+        "label": "Image 1"
+    },
+    {
+        "type": "image_picker",
+        "id": "image2",
+        "label": "Image 2"
+    },
+    {
+        "type": "image_picker",
+        "id": "image3",
+        "label": "Image 3"
+    }
+    ],
+    "presets": [
+      {
+        "name": "Phen-works-section"
+      }
+    ]
+  }
+{% endschema %}
