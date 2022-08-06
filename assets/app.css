@@ -777,6 +777,12 @@ video {
 .w-150 {
   width: 150px;
 }
+.w-1\/3 {
+  width: 33%;
+}
+.w-1\/6 {
+  width: 16.6%;
+}
 .w-1\/2 {
   width: 50%;
 }
@@ -805,12 +811,6 @@ video {
 }
 .shrink {
   flex-shrink: 1;
-}
-.grow-2 {
-  flex-grow: 2;
-}
-.grow {
-  flex-grow: 1;
 }
 .basis-1\/3 {
   flex-basis: 33.333333%;
