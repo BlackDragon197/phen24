@@ -40,7 +40,8 @@ module.exports = {
     
     extend: {
       fontSize:{
-        '2xs': '10px'
+        '2xs': '10px',
+        '3xs': '8px',
       },
       flexGrow: {
         '2': 2
