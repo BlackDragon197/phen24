@@ -124,6 +124,12 @@
           "shread": "shopify:\/\/shop_images\/Night_Shred_1.png",
           "revburn": "shopify:\/\/shop_images\/RevBurn_PM_1.png"
         }
+      },
+      "16598298357f5ab5fd": {
+        "type": "phen-works",
+        "settings": {
+          "image1": "shopify:\/\/shop_images\/Rectangle_63.png"
+        }
       }
     },
     "content_for_index": [
@@ -134,7 +140,8 @@
       "16593139842c78691b",
       "1659726428fcc93c43",
       "1659733562877df1ec",
-      "16597448166949f1ac"
+      "16597448166949f1ac",
+      "16598298357f5ab5fd"
     ]
   },
   "presets": {
