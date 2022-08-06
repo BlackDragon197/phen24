@@ -39,6 +39,12 @@ module.exports = {
     },
     
     extend: {
+      fontSize:{
+        '2xs': '10px'
+      },
+      flexGrow: {
+        '2': 2
+      },
       colors:{
         'br-orange' : 'rgb(255, 153, 0)',
         'br-blue': 'rgb(38, 170, 224)',
