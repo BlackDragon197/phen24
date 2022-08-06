@@ -750,6 +750,9 @@ video {
 .h-11 {
   height: 2.75rem;
 }
+.h-8 {
+  height: 2rem;
+}
 .min-h-300 {
   min-height: 300px;
 }
