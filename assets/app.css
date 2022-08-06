@@ -891,6 +891,9 @@ video {
 .border-b-\[5px\] {
   border-bottom-width: 5px;
 }
+.border-t {
+  border-top-width: 1px;
+}
 .border-red-600 {
   --tw-border-opacity: 1;
   border-color: rgb(220 38 38 / var(--tw-border-opacity));
