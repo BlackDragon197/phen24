@@ -567,6 +567,12 @@ video {
 .-top-reviews {
   top: -75px;
 }
+.-top-1 {
+  top: -0.25rem;
+}
+.-top-10 {
+  top: -2.5rem;
+}
 .-top-20 {
   top: -5rem;
 }
@@ -788,6 +794,9 @@ video {
 }
 .w-1\/6 {
   width: 16.6%;
+}
+.w-\[110\%\] {
+  width: 110%;
 }
 .w-1\/2 {
   width: 50%;
