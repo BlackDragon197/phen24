@@ -115,6 +115,11 @@
         "settings": {
           "phen24": "shopify:\/\/shop_images\/Group_146.png"
         }
+      },
+      "16597448166949f1ac": {
+        "type": "table",
+        "settings": {
+        }
       }
     },
     "content_for_index": [
@@ -124,7 +129,8 @@
       "1659313964a4a717d8",
       "16593139842c78691b",
       "1659726428fcc93c43",
-      "1659733562877df1ec"
+      "1659733562877df1ec",
+      "16597448166949f1ac"
     ]
   },
   "presets": {
