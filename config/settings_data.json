@@ -119,7 +119,10 @@
       "16597448166949f1ac": {
         "type": "table",
         "settings": {
-          "bottles": "shopify:\/\/shop_images\/Group_151.png"
+          "bottles": "shopify:\/\/shop_images\/Group_151.png",
+          "lean": "shopify:\/\/shop_images\/LeanPM_1.png",
+          "shread": "shopify:\/\/shop_images\/Night_Shred_1.png",
+          "revburn": "shopify:\/\/shop_images\/RevBurn_PM_1.png"
         }
       }
     },
