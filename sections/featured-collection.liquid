@@ -42,7 +42,7 @@
         <p class="text-xl">{{ product.title | escape }}</p>
         <p class="text-xs text-right">{{ product.description }}</p>
       </div>
-      <div class="flex flex-row loop-content items-center w-full mb-5 pb-2 rounded-b-10 bg-[#F4F6F8]">
+      <div class="flex flex-row loop-content items-start w-full mb-5 pb-2 rounded-b-10 bg-[#F4F6F8]">
       {% if product.featured_image != blank %}
         {% if product.images[1]%}
         <div class="hidden md:block">
@@ -67,17 +67,20 @@
         {% endif %}
       {% endif %}
       <div class="w-3/4 flex flex-col text-center items-start">
-      <div class="flex flex-row justify-between mt-2">
+      <div class="flex flex-row justify-between mt-2 w-full">
         <span class="uppercase text-2xs font-bold">NORMALLY:</span>
         <span class="uppercase text-2xs font-bold text-white">TODAY:</span>
       </div>
       <div class="flex flex-row justify-between items-center">
         <div class="flex items-start text-2xl">
-          <span class="relative border-b-2 border-black -top-[14px]"> <span class="relative top-[14px]">{{product.price | money }}</span></span>
+          <span class="relative border-b-2 border-black -top-[14px]"> <span class="relative top-[14px]">{{product.compare_at_price | money }}</span></span>
         </div>
         <div class="flex items-end text-lg text-white">
-          {{product.compare_at_price | money }}
+          {{product.price | money }}
         </div>
+      </div>
+      <div class="flex justify-between items-center text-white mt-4 text-xs">
+        TOTAL: {{product.price | money }}
       </div>
     </div>
     
