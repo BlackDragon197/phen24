@@ -37,8 +37,8 @@
 
   {% for product in collection.products limit: 3 %}
   
-    <a  href="{{ product.url | within: collection }}" class="featured-collection-item mx-5 w-full bg-[#F4F6F8]">
-      <div class="relative  flex justify-between items-center rounded-t-10 font-bold uppercase px-2 text-white bg-all-night [&:nth-child(2)]:bg-all-day">
+    <a  href="{{ product.url | within: collection }}" class="featured-collection-item mx-5 w-full bg-[#F4F6F8] bg-all-night [&:nth-child(2)]:bg-all-day">
+      <div class="relative  flex justify-between items-center rounded-t-10 font-bold uppercase px-2 text-white ">
         <p class="text-xl">{{ product.title | escape }}</p>
         <p class="text-xs text-right">{{ product.description }}</p>
       </div>
@@ -83,7 +83,7 @@
     
     </div>
 {% style %}
-    .loop>a:nth-child(2){
+    .loop>a>div:nth-child(2){
       background-image: linear-gradient(180deg, #26AAE0 0%, #693D90 64.06%);
     }
 {% endstyle %}
