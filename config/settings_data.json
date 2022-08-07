@@ -128,7 +128,9 @@
       "16598298357f5ab5fd": {
         "type": "phen-works",
         "settings": {
-          "image1": "shopify:\/\/shop_images\/Rectangle_63.png"
+          "image1": "shopify:\/\/shop_images\/Rectangle_63.png",
+          "image2": "shopify:\/\/shop_images\/Rectangle_131.png",
+          "image3": "shopify:\/\/shop_images\/Rectangle_132.png"
         }
       }
     },
