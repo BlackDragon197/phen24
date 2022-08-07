@@ -9,7 +9,7 @@
   - Heading: title of the featured collection section
 {%- endcomment -%}
 
-<section class="bg-[#c4c4c433] relative flex items-center flex-col ">
+<section class="relative flex items-center flex-col ">
   <div class="flex justify-center items-center">
     {% if section.settings.image1 != blank %}
     {% include 'responsive-image' with
@@ -19,14 +19,14 @@
     %}
     {% endif %}
   </div>
-  <div class="mx-7 uppercase text-xl font-bold text-black">
+  <div class="mx-20 uppercase text-xl font-bold text-black text-center">
     {{section.settings.title}}
   </div>
-  <div class="mx-7 mt-3 text-sm font-bold text-black">
+  <div class="mx-7 mt-3 text-sm font-bold text-black text-center">
     {{section.settings.sub}}
   </div>
   <div class="mx-6 my-3 font-bold text-black">
-    <div class="bg-red-600 rounded-[100px] text-white text-center text-sm px-8">
+    <div class="bg-red-600 rounded-[100px] text-white text-center text-sm px-8 py-1">
         <p>LIMITED STOCK</p>
         <p>MAX 5 BOXES PER HOUSEHOLD</p>
     </div>
@@ -37,8 +37,12 @@
 
   {% for product in collection.products limit: 3 %}
   
-    <a  href="{{ product.url | within: collection }}" class="featured-collection-item mx-4 xs:mx-7">
-      <div class="max-w-[290px] flex flex-row items-center w-full min-w-[240px] bg-white mb-5 shadow-product rounded-rounded-3">
+    <a  href="{{ product.url | within: collection }}" class="featured-collection-item mx-5">
+      <div class="relative bg-all-night flex justify-between items-center rounded-t-10 font-bold uppercase">
+        <p class="text-xl">{{ product.title | escape }}</p>
+        <p class="text-xs">{{ product.description }}</p>
+      </div>
+      <div class="flex flex-row items-center w-full bg-white mb-5 shadow-product rounded-rounded-3">
       {% if product.featured_image != blank %}
         {% if product.images[1]%}
         <div class="hidden md:block">
@@ -53,7 +57,7 @@
         %}
       </div>
         {% else %}
-        <div class="flex justify-center featured-collection__image">
+        <div class="flex justify-center featured-collection__image w-1/4">
           {% include 'responsive-image' with
             image: product.featured_image,
             max_width: 143,
@@ -62,9 +66,7 @@
         </div>
         {% endif %}
       {% endif %}
-      <div class="w-full flex flex-col text-center">
-      <p>{{ product.title | escape }}</p>
-      <p>{{ product.description }}</p>
+      <div class="w-3/4 flex flex-col text-center">
       <div class="flex flex-row justify-between">
         <span class="uppercase text-[9px] font-normal">Regular Price</span>
         <span class="uppercase text-[9px] font-normal">Easter Price</span>
