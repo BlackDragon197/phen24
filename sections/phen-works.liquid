@@ -1,5 +1,5 @@
 <section class="relative bg-all-night text-white">
-    <div class="relative my-7 mx-16 text-center uppercase">
+    <div class="relative mb-7 pt-7 mx-16 text-center uppercase">
         <p class="text-3xl font-normal">How <span class="font-bold">PHEN24 </span>
             works</p>
     </div>
@@ -19,6 +19,42 @@
         </div>
         <div class="mt-5 mb-9 text-center font-bold">
             <p class="text-sm">Take 1 DAY capsule with a glass of water at breakfast — and PHEN24 fights fat-storing cortisol levels all day long.</p>
+        </div>
+    </div>
+    <div class="relative mt-4 mx-9 flex flex-col justify-center items-center">
+        <div class="text-center text-xl font-bold">
+            <p>STEP 2<span class="text-base"><br/>
+Take it Every Evening</span></p>
+        </div>
+        <div class="mt-4">
+            {% if section.settings.image2 != blank %}
+                {% include 'responsive-image' with
+                    image: section.settings.image2,
+                    max_width: 307,
+                    max_height: 307
+                %}
+                {% endif %}
+        </div>
+        <div class="mt-5 mb-9 text-center font-bold">
+            <p class="text-sm">Take 2 NIGHT capsules with a glass of water 15 minutes before dinner — and PHEN24 works all night long while melatonin levels are high.</p>
+        </div>
+    </div>
+    <div class="relative mt-4 mx-9 flex flex-col justify-center items-center">
+        <div class="text-center text-xl font-bold">
+            <p>STEP 3<span class="text-base"><br/>
+                Watch Your Body Change!</span></p>
+        </div>
+        <div class="mt-4">
+            {% if section.settings.image3 != blank %}
+                {% include 'responsive-image' with
+                    image: section.settings.image3,
+                    max_width: 307,
+                    max_height: 307
+                %}
+                {% endif %}
+        </div>
+        <div class="mt-5 mb-9 text-center font-bold">
+            <p class="text-sm">Keep this daily routine going for the next 3 - 6 months to be astounded at how your body changes — and we want to hear about it! We love receiving success stories from happy customers.</p>
         </div>
     </div>
 </section>

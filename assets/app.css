@@ -644,10 +644,6 @@ video {
   margin-left: 3.5rem;
   margin-right: 3.5rem;
 }
-.my-7 {
-  margin-top: 1.75rem;
-  margin-bottom: 1.75rem;
-}
 .mx-16 {
   margin-left: 4rem;
   margin-right: 4rem;
@@ -1084,6 +1080,9 @@ video {
 }
 .pt-12 {
   padding-top: 3rem;
+}
+.pt-7 {
+  padding-top: 1.75rem;
 }
 .text-left {
   text-align: left;
