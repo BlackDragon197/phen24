@@ -4,19 +4,19 @@
       twice a day <br/>
       <span class="font-bold"></span>for at least 3 months...</span></h3>
   </div>
-  <div class="mx-6 mb-8 border-b-3">
+  <div class="mx-6 pb-8 border-b-3 text-center">
     <p class="font-bold">DAY 1</p>
 
     <p>The most common comments we receive from new PHEN24 users are "I have so much energy... all day!" and "I don't care as much about food... especially at night!"
     </p>
   </div>
-  <div class="mx-6 my-8 border-b-3">
+  <div class="mx-6 py-8 border-b-3 text-center">
     <p class="font-bold">WEEK 1</p>
 
     <p>After your first week on PHEN24 you may notice that food doesn't have such a big pull as it used to. You've got things to do and "fueling up" is still part of your day — but your appetite doesn't 'run the show' like it may have in the past.
     </p>
   </div>
-  <div class="mx-6 my-8 border-b-3">
+  <div class="mx-6 py-8 border-b-3 text-center">
     <p class="font-bold">MONTH 1</p>
 
     <p>After a full month of using PHEN24 you may notice that increased energy, decreased appetite, and a boosted mood (despite eating less) have become the "new normal" for you.
@@ -24,7 +24,7 @@
     <p>But the most exciting change you could hope to experience are positive remarks from people who see you on a regular basis! 
     </p>
   </div>
-  <div class="mx-6 my-8 border-b-3">
+  <div class="mx-6 py-8 border-b-3 text-center">
     <p class="font-bold">MONTH 3</p>
 
     <p>After 3 months of enjoying a faster metabolism you may notice that you look and feel slimmer than you have in a long time.
@@ -32,6 +32,21 @@
     <p>That could mean your clothes are fitting so much better — or you may even need to purchase new clothes that you feel more comfortable in. This is a good time to update your profile picture on social media to match your new appearance!
     </p>
   </div>
+  <div class="relative flex justify-center">
+    {% if section.settings.image1 != blank %}
+    {% include 'responsive-image' with
+        image: section.settings.image1,
+        wrapper_class="img-wrap-expect"
+    %}
+    {% endif %}
+  </div>
+  {% style %}
+  .img-wrap-expect{
+    margin: 0 3rem;
+    width: 100%;
+    height: fit-content;
+  }
+{% endstyle %}
 </section>
 
 
