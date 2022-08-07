@@ -9,7 +9,7 @@
   - Heading: title of the featured collection section
 {%- endcomment -%}
 
-<section class="bg-[#c4c4c433] relative flex items-center flex-col">
+<section class="bg-[#c4c4c433] relative flex items-center flex-col ">
   <div class="flex justify-center items-center">
     {% if section.settings.image1 != blank %}
     {% include 'responsive-image' with
@@ -19,11 +19,17 @@
     %}
     {% endif %}
   </div>
-  <div class="mx-7 mt-5 uppercase text-xl">
+  <div class="mx-7 uppercase text-xl font-bold text-black">
     {{section.settings.title}}
   </div>
-  <div class="mx-7 mt-4 uppercase text-xl">
+  <div class="mx-7 mt-3 text-base font-bold text-black">
     {{section.settings.sub}}
+  </div>
+  <div class="mx-6 font-bold text-black"">
+    <div class="bg-red rounded-50 flex justify-center items-center text-white text-center">
+        <p>LIMITED STOCK</p>
+        <p>MAX 5 BOXES PER HOUSEHOLD</p>
+    </div>
   </div>
   <div class="justify-center items-center flex flex-col">
   
