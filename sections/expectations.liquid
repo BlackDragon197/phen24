@@ -38,7 +38,8 @@
         image: section.settings.image1,
         max_width: 'unset',
         max_height: 'unset',
-        wrapper_class: "img-wrap-expect"
+        wrapper_class: "img-wrap-expect",
+        image_class: 'img-expect'
     %}
     {% endif %}
   </div>
@@ -47,6 +48,10 @@
     margin: 0 3rem;
     width: 100%;
     height: fit-content;
+  }
+  .img-expect{
+    max-width: 100%;
+    max-height: unset;
   }
 {% endstyle %}
 </section>
