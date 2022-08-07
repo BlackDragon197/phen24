@@ -19,6 +19,12 @@
     %}
     {% endif %}
   </div>
+  <div class="mx-7 mt-5 uppercase text-xl">
+    {{section.settings.title}}
+  </div>
+  <div class="mx-7 mt-4 uppercase text-xl">
+    {{section.settings.sub}}
+  </div>
   <div class="justify-center items-center flex flex-col">
   
   {%- assign collection = collections[section.settings.collection] -%}
@@ -99,6 +105,12 @@
         "id": "title",
         "label": "Heading",
         "default": "DON'T WAIT"
+      },
+      {
+        "type": "textarea",
+        "id": "sub",
+        "label": "Sub title",
+        "default": " This is Your Best Chance to See What PHEN24 Can Do For You!"
       },
       {
         "id": "collection",
