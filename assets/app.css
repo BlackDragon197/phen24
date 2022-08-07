@@ -546,6 +546,9 @@ video {
 .relative {
   position: relative;
 }
+.-top-2 {
+  top: -0.5rem;
+}
 .-top-4 {
   top: -1rem;
 }
@@ -656,11 +659,11 @@ video {
 .mt-3 {
   margin-top: 0.75rem;
 }
-.mt-7 {
-  margin-top: 1.75rem;
-}
 .mt-2 {
   margin-top: 0.5rem;
+}
+.mt-7 {
+  margin-top: 1.75rem;
 }
 .mb-8 {
   margin-bottom: 2rem;
@@ -889,6 +892,10 @@ video {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+.rounded-b-10 {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
 .border-3 {
   border-width: 3px;
 }
@@ -897,6 +904,9 @@ video {
 }
 .border-b-3 {
   border-bottom-width: 3px;
+}
+.border-b-2 {
+  border-bottom-width: 2px;
 }
 .border-t {
   border-top-width: 1px;
@@ -1046,6 +1056,9 @@ video {
 .pt-6 {
   padding-top: 1.5rem;
 }
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -1097,8 +1110,8 @@ video {
   font-size: 0.75rem;
   line-height: 1rem;
 }
-.text-\[9px\] {
-  font-size: 9px;
+.text-2xs {
+  font-size: 10px;
 }
 .text-\[26px\] {
   font-size: 26px;
@@ -1110,8 +1123,8 @@ video {
   font-size: 1rem;
   line-height: 1.5rem;
 }
-.text-2xs {
-  font-size: 10px;
+.text-\[9px\] {
+  font-size: 9px;
 }
 .text-3xs {
   font-size: 7px;
