@@ -921,10 +921,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
-.bg-\[\#F4F6F8\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(244 246 248 / var(--tw-bg-opacity));
-}
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1239,7 +1235,4 @@ video {
   .lg\:font-extrabold {
     font-weight: 800;
   }
-}
-.\[\&\:nth-child\(2\)\]\:bg-all-day:nth-child(2) {
-  background-image: linear-gradient(180deg, #FF9900 0%, #EA552E 100%);;
 }
