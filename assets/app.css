@@ -1236,3 +1236,6 @@ video {
     font-weight: 800;
   }
 }
+.\[\&\:nth-child\(2\)\]\:bg-all-day:nth-child(2) {
+  background-image: linear-gradient(180deg, #FF9900 0%, #EA552E 100%);;
+}

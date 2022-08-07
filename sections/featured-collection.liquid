@@ -31,18 +31,18 @@
         <p>MAX 5 BOXES PER HOUSEHOLD</p>
     </div>
   </div>
-  <div class="justify-center items-center flex flex-col">
+  <div class="justify-center items-center flex flex-col ">
   
   {%- assign collection = collections[section.settings.collection] -%}
 
   {% for product in collection.products limit: 3 %}
   
-    <a  href="{{ product.url | within: collection }}" class="featured-collection-item mx-5 w-full">
-      <div class="relative bg-all-night flex justify-between items-center rounded-t-10 font-bold uppercase px-2 text-white">
+    <a  href="{{ product.url | within: collection }}" class="featured-collection-item mx-5 w-full bg-all-night [&:nth-child(2)]:bg-all-day">
+      <div class="relative  flex justify-between items-center rounded-t-10 font-bold uppercase px-2 text-white">
         <p class="text-xl">{{ product.title | escape }}</p>
         <p class="text-xs text-right">{{ product.description }}</p>
       </div>
-      <div class="flex flex-row items-center w-full bg-white mb-5 shadow-product rounded-rounded-3">
+      <div class="flex flex-row items-center w-full mb-5 shadow-product rounded-rounded-3">
       {% if product.featured_image != blank %}
         {% if product.images[1]%}
         <div class="hidden md:block">
