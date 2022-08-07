@@ -36,6 +36,8 @@
     {% if section.settings.image1 != blank %}
     {% include 'responsive-image' with
         image: section.settings.image1,
+        max_width: 'unset',
+        max_height: 'unset',
         wrapper_class: "img-wrap-expect"
     %}
     {% endif %}
