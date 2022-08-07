@@ -37,10 +37,10 @@
 
   {% for product in collection.products limit: 3 %}
   
-    <a  href="{{ product.url | within: collection }}" class="featured-collection-item mx-5">
-      <div class="relative bg-all-night flex justify-between items-center rounded-t-10 font-bold uppercase">
+    <a  href="{{ product.url | within: collection }}" class="featured-collection-item mx-5 w-full">
+      <div class="relative bg-all-night flex justify-between items-center rounded-t-10 font-bold uppercase px-2 text-white">
         <p class="text-xl">{{ product.title | escape }}</p>
-        <p class="text-xs">{{ product.description }}</p>
+        <p class="text-xs text-right">{{ product.description }}</p>
       </div>
       <div class="flex flex-row items-center w-full bg-white mb-5 shadow-product rounded-rounded-3">
       {% if product.featured_image != blank %}
