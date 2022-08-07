@@ -37,12 +37,12 @@
 
   {% for product in collection.products limit: 3 %}
   
-    <a  href="{{ product.url | within: collection }}" class="featured-collection-item mx-5 w-full">
+    <a  href="{{ product.url | within: collection }}" class="featured-collection-item mx-5 w-full ">
       <div class="relative loop-title flex justify-between items-center rounded-t-10 font-bold uppercase px-2 text-white bg-all-night">
         <p class="text-xl">{{ product.title | escape }}</p>
         <p class="text-xs text-right">{{ product.description }}</p>
       </div>
-      <div class="flex flex-row items-center w-full mb-5 rounded-rounded-3">
+      <div class="flex flex-row loop-content items-center w-full mb-5 rounded-rounded-3 bg-[#F4F6F8]">
       {% if product.featured_image != blank %}
         {% if product.images[1]%}
         <div class="hidden md:block">
@@ -60,8 +60,8 @@
         <div class="flex justify-center featured-collection__image w-1/4">
           {% include 'responsive-image' with
             image: product.featured_image,
-            max_width: 143,
-            max_height: 114
+            max_width: 86,
+            max_height: 191
           %}
         </div>
         {% endif %}
@@ -85,6 +85,9 @@
 {% style %}
     .loop>a:nth-child(2)>div.loop-title{
       background-image: linear-gradient(180deg, #FF9900 0%, #EA552E 100%);
+    }
+    .loop>a:nth-child(2)>div.loop-content{
+      background-image: linear-gradient(180deg, #26AAE0 0%, #693D90 64.06%);
     }
 {% endstyle %}
 
