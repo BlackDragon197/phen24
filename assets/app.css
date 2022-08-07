@@ -665,6 +665,15 @@ video {
 .mt-2 {
   margin-top: 0.5rem;
 }
+.ml-5 {
+  margin-left: 1.25rem;
+}
+.mr-3 {
+  margin-right: 0.75rem;
+}
+.mr-1 {
+  margin-right: 0.25rem;
+}
 .mt-7 {
   margin-top: 1.75rem;
 }
@@ -745,6 +754,9 @@ video {
 }
 .block {
   display: block;
+}
+.inline {
+  display: inline;
 }
 .flex {
   display: flex;
@@ -1033,9 +1045,9 @@ video {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 .py-3 {
   padding-top: 0.75rem;
@@ -1044,10 +1056,6 @@ video {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
-}
-.px-7 {
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
 }
 .py-4 {
   padding-top: 1rem;
@@ -1124,15 +1132,15 @@ video {
 .text-2xs {
   font-size: 10px;
 }
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
 .text-\[26px\] {
   font-size: 26px;
 }
 .text-\[22px\] {
   font-size: 22px;
-}
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 .text-\[9px\] {
   font-size: 9px;
@@ -1165,6 +1173,10 @@ video {
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.text-\[\#FD1111\] {
+  --tw-text-opacity: 1;
+  color: rgb(253 17 17 / var(--tw-text-opacity));
 }
 .text-orange-500 {
   --tw-text-opacity: 1;
