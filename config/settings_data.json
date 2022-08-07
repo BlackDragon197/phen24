@@ -132,6 +132,11 @@
           "image2": "shopify:\/\/shop_images\/Rectangle_131.png",
           "image3": "shopify:\/\/shop_images\/Rectangle_132.png"
         }
+      },
+      "1659831669d26ab9ce": {
+        "type": "expectations",
+        "settings": {
+        }
       }
     },
     "content_for_index": [
@@ -143,7 +148,8 @@
       "1659726428fcc93c43",
       "1659733562877df1ec",
       "16597448166949f1ac",
-      "16598298357f5ab5fd"
+      "16598298357f5ab5fd",
+      "1659831669d26ab9ce"
     ]
   },
   "presets": {
