@@ -138,6 +138,13 @@
         "settings": {
           "image1": "shopify:\/\/shop_images\/AdobeStock_351468861_2.png"
         }
+      },
+      "16599038056f8346f3": {
+        "type": "featured-collection",
+        "settings": {
+          "title": "DON'T WAIT FOR THE EASTER BUNNY TO BRING YOURS! <br><span class=\"md:text-[40px] font-black font-montserrat md:font-futura md:font-bold\">ORDER NOOCUBE TODAY!<\/span>",
+          "collection": "phen24"
+        }
       }
     },
     "content_for_index": [
@@ -150,7 +157,8 @@
       "1659733562877df1ec",
       "16597448166949f1ac",
       "16598298357f5ab5fd",
-      "1659831669d26ab9ce"
+      "1659831669d26ab9ce",
+      "16599038056f8346f3"
     ]
   },
   "presets": {
