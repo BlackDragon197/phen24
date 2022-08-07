@@ -75,7 +75,8 @@ module.exports = {
         'all-day': 'linear-gradient(180deg, #FF9900 0%, #EA552E 100%);',
         'all-night': 'linear-gradient(180deg, #26AAE0 0%, #693D90 64.06%);',
         'formula-day': 'linear-gradient(180deg, #EA552E 19.48%, #FF9900 78.45%);',
-        'table-rect': 'linear-gradient(180deg, #FF9900 0%, #FD1111 100%);'
+        'table-rect': 'linear-gradient(180deg, #FF9900 0%, #FD1111 100%);',
+        'expect': 'linear-gradient(180deg, #FD1111 0%, #FF9900 100%);'
       },
       spacing:{
         'reviews': '75px'
