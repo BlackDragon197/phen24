@@ -143,6 +143,7 @@
         "type": "featured-collection",
         "settings": {
           "image1": "shopify:\/\/shop_images\/Group_156.png",
+          "guarantee": "shopify:\/\/shop_images\/Group_159.png",
           "payments": "shopify:\/\/shop_images\/payments_5.png",
           "title": "special intro\npricing",
           "sub": "This is Your Best Chance to See What PHEN24 Can Do For You!",
