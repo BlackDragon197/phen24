@@ -69,17 +69,17 @@
         <div class="w-3/4 flex flex-col text-center items-start">
         <div class="flex flex-row justify-between mt-2 w-full">
           <span class="uppercase text-2xs font-bold">NORMALLY:</span>
-          <span class="uppercase text-2xs font-bold text-[#FD1111]">TODAY:</span>
+          <span class="uppercase text-2xs font-bold text-[#FD1111] loop-white">TODAY:</span>
         </div>
         <div class="flex flex-row justify-between items-center w-full">
           <div class="flex items-start text-3xl">
             <span class="relative border-b-2 border-black -top-[14px]"> <span class="relative top-[14px]">{{product.compare_at_price | money }}</span></span>
           </div>
-          <div class="flex items-end text-lg text-[#FD1111]">
+          <div class="flex items-end text-lg text-[#FD1111] loop-white">
             {{product.price | money }}
           </div>
         </div>
-        <div class="text-center text-black mt-4 text-base w-full loop-total">
+        <div class="text-center text-black mt-4 text-base w-full loop-white">
           TOTAL: {{product.price | money }}
         </div>
         <div class="w-4/5 ml-5 mr-3 flex justify-center items-center text-center px-7 py-3 rounded-20 bg-green-500 font-bold text-black text-sm mt-3">
@@ -112,7 +112,7 @@
       .loop>a:nth-child(2)>div.loop-content{
         background-image: linear-gradient(180deg, #26AAE0 0%, #693D90 64.06%);
       }
-      .loop>a:nth-child(2)>div>div>div.loop-total{
+      .loop>a:nth-child(2)>div>div>div.loop-white{
         color: white;
       }
   {% endstyle %}
