@@ -10,125 +10,150 @@
 {%- endcomment -%}
 
 <section class="relative flex items-center flex-col ">
-  <div class="flex justify-center items-center">
-    {% if section.settings.image1 != blank %}
-    {% include 'responsive-image' with
-        image: section.settings.image1,
-        max_width: '375',
-        max_height: '300'  
-    %}
-    {% endif %}
-  </div>
-  <div class="mx-20 uppercase text-xl font-bold text-black text-center">
-    {{section.settings.title}}
-  </div>
-  <div class="mx-7 mt-3 text-sm font-bold text-black text-center">
-    {{section.settings.sub}}
-  </div>
-  <div class="mx-6 my-3 font-bold text-black">
-    <div class="bg-red-600 rounded-[100px] text-white text-center text-sm px-8 py-1">
-        <p>LIMITED STOCK</p>
-        <p>MAX 5 BOXES PER HOUSEHOLD</p>
+    <div class="flex justify-center items-center">
+      {% if section.settings.image1 != blank %}
+      {% include 'responsive-image' with
+          image: section.settings.image1,
+          max_width: '375',
+          max_height: '300'  
+      %}
+      {% endif %}
     </div>
-  </div>
-  <div class="justify-center items-center flex flex-col loop">
-  
-  {%- assign collection = collections[section.settings.collection] -%}
+    <div class="mx-20 uppercase text-xl font-bold text-black text-center">
+      {{section.settings.title}}
+    </div>
+    <div class="mx-7 mt-3 text-sm font-bold text-black text-center">
+      {{section.settings.sub}}
+    </div>
+    <div class="mx-6 my-3 font-bold text-black">
+      <div class="bg-red-600 rounded-[100px] text-white text-center text-sm px-8 py-1">
+          <p>LIMITED STOCK</p>
+          <p>MAX 5 BOXES PER HOUSEHOLD</p>
+      </div>
+    </div>
+    <div class="justify-center items-center flex flex-col loop">
+    
+    {%- assign collection = collections[section.settings.collection] -%}
 
-  {% for product in collection.products limit: 3 %}
-  
-    <a  href="{{ product.url | within: collection }}" class="featured-collection-item mx-5 w-full font-bold">
-      <div class="relative loop-title flex justify-between items-center rounded-t-10 font-bold uppercase px-2 text-white bg-all-night">
-        <p class="text-xl">{{ product.title | escape }}</p>
-        <p class="text-xs text-right">{{ product.description }}</p>
-      </div>
-      <div class="flex flex-row loop-content items-start w-full mb-5 pb-2 rounded-b-10 bg-[#F4F6F8]">
-      {% if product.featured_image != blank %}
-        {% if product.images[1]%}
-        <div class="hidden md:block">
-        <img class="" src="{{ product.images[1] | img_url: 'large' }}" alt="{{ product.images.last.alt | escape }}" />
-      </div>
+    {% for product in collection.products limit: 3 %}
+    
+      <a  href="{{ product.url | within: collection }}" class="featured-collection-item mx-5 w-full font-bold">
+        <div class="relative loop-title flex justify-between items-center rounded-t-10 font-bold uppercase px-2 text-white bg-all-night">
+          <p class="text-xl">{{ product.title | escape }}</p>
+          <p class="text-xs text-right">{{ product.description }}</p>
+        </div>
+        <div class="flex flex-row loop-content items-start w-full mb-5 pb-2 rounded-b-10 bg-[#F4F6F8]">
+        {% if product.featured_image != blank %}
+          {% if product.images[1]%}
+          <div class="hidden md:block">
+          <img class="" src="{{ product.images[1] | img_url: 'large' }}" alt="{{ product.images.last.alt | escape }}" />
+        </div>
 
-      <div class="flex justify-center md:hidden featured-collection__image">
-        {% include 'responsive-image' with
-          image: product.featured_image,
-          max_width: 143,
-          max_height: 114
-        %}
-      </div>
-        {% else %}
-        <div class="flex justify-center featured-collection__image w-1/4">
+        <div class="flex justify-center md:hidden featured-collection__image">
           {% include 'responsive-image' with
             image: product.featured_image,
-            max_width: 86,
-            max_height: 191
+            max_width: 143,
+            max_height: 114
           %}
         </div>
+          {% else %}
+          <div class="flex justify-center featured-collection__image w-1/4">
+            {% include 'responsive-image' with
+              image: product.featured_image,
+              max_width: 86,
+              max_height: 191
+            %}
+          </div>
+          {% endif %}
         {% endif %}
-      {% endif %}
-      <div class="w-3/4 flex flex-col text-center items-start">
-      <div class="flex flex-row justify-between mt-2 w-full">
-        <span class="uppercase text-2xs font-bold">NORMALLY:</span>
-        <span class="uppercase text-2xs font-bold text-[#FD1111]">TODAY:</span>
-      </div>
-      <div class="flex flex-row justify-between items-center w-full">
-        <div class="flex items-start text-3xl">
-          <span class="relative border-b-2 border-black -top-[14px]"> <span class="relative top-[14px]">{{product.compare_at_price | money }}</span></span>
+        <div class="w-3/4 flex flex-col text-center items-start">
+        <div class="flex flex-row justify-between mt-2 w-full">
+          <span class="uppercase text-2xs font-bold">NORMALLY:</span>
+          <span class="uppercase text-2xs font-bold text-[#FD1111]">TODAY:</span>
         </div>
-        <div class="flex items-end text-lg text-[#FD1111]">
-          {{product.price | money }}
+        <div class="flex flex-row justify-between items-center w-full">
+          <div class="flex items-start text-3xl">
+            <span class="relative border-b-2 border-black -top-[14px]"> <span class="relative top-[14px]">{{product.compare_at_price | money }}</span></span>
+          </div>
+          <div class="flex items-end text-lg text-[#FD1111]">
+            {{product.price | money }}
+          </div>
+        </div>
+        <div class="text-center text-black mt-4 text-base w-full loop-total">
+          TOTAL: {{product.price | money }}
+        </div>
+        <div class="w-4/5 ml-5 mr-3 flex justify-center items-center text-center px-7 py-3 rounded-20 bg-green-500 font-bold text-black text-sm mt-3">
+          <span><svg class="inline mr-1" width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.45701 13.3334H19.631C19.9324 13.3334 20.1969 13.1362 20.2785 12.8497L22.974 3.51629C23.0319 3.31508 22.9922 3.09893 22.8646 2.93175C22.7369 2.76508 22.5383 2.66665 22.3263 2.66665H5.90142L5.41974 0.522218C5.3513 0.216838 5.07756 0 4.76171 0H0.673826C0.301467 0 0 0.298262 0 0.666661C0 1.03523 0.301467 1.33332 0.673826 1.33332H4.22089L6.65421 12.1666C5.93827 12.4746 5.43553 13.1796 5.43553 14.0001C5.43553 15.1028 6.34239 16 7.45701 16H19.631C20.0035 16 20.3048 15.702 20.3048 15.3334C20.3048 14.965 20.0035 14.6667 19.631 14.6667H7.45701C7.08588 14.6667 6.78318 14.3679 6.78318 14.0001C6.78318 13.6322 7.08588 13.3334 7.45701 13.3334Z" fill="black"/>
+            <path d="M6.78318 18C6.78318 19.103 7.69004 20 8.80483 20C9.91945 20 10.8263 19.103 10.8263 18C10.8263 16.8972 9.91945 16 8.80483 16C7.69004 16 6.78318 16.8972 6.78318 18Z" fill="black"/>
+            <path d="M16.2618 18C16.2618 19.103 17.1687 20 18.2833 20C19.3981 20 20.3048 19.103 20.3048 18C20.3048 16.8972 19.3981 16 18.2833 16C17.1687 16 16.2618 16.8972 16.2618 18Z" fill="black"/>
+            </svg>Add to Cart</span>
+            
+        </div>
+        <div class="text-center w-full uppercase text-white text-2xs mt-2">
+          free shipping
+        </div>
+        <div class="flex justify-center items-center w-full">
+          {% if section.settings.payments != blank %}
+          {% include 'responsive-image' with
+              image: section.settings.payments,
+              max_width: 154,
+              max_height: 20 
+          %}
+          {% endif %}
         </div>
       </div>
-      <div class="text-center text-black mt-4 text-base w-full loop-total">
-        TOTAL: {{product.price | money }}
+      
       </div>
-      <div class="w-4/5 ml-5 mr-3 flex justify-center items-center text-center px-7 py-3 rounded-20 bg-green-500 font-bold text-black text-sm mt-3">
-        <span><svg class="inline mr-1" width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M7.45701 13.3334H19.631C19.9324 13.3334 20.1969 13.1362 20.2785 12.8497L22.974 3.51629C23.0319 3.31508 22.9922 3.09893 22.8646 2.93175C22.7369 2.76508 22.5383 2.66665 22.3263 2.66665H5.90142L5.41974 0.522218C5.3513 0.216838 5.07756 0 4.76171 0H0.673826C0.301467 0 0 0.298262 0 0.666661C0 1.03523 0.301467 1.33332 0.673826 1.33332H4.22089L6.65421 12.1666C5.93827 12.4746 5.43553 13.1796 5.43553 14.0001C5.43553 15.1028 6.34239 16 7.45701 16H19.631C20.0035 16 20.3048 15.702 20.3048 15.3334C20.3048 14.965 20.0035 14.6667 19.631 14.6667H7.45701C7.08588 14.6667 6.78318 14.3679 6.78318 14.0001C6.78318 13.6322 7.08588 13.3334 7.45701 13.3334Z" fill="black"/>
-          <path d="M6.78318 18C6.78318 19.103 7.69004 20 8.80483 20C9.91945 20 10.8263 19.103 10.8263 18C10.8263 16.8972 9.91945 16 8.80483 16C7.69004 16 6.78318 16.8972 6.78318 18Z" fill="black"/>
-          <path d="M16.2618 18C16.2618 19.103 17.1687 20 18.2833 20C19.3981 20 20.3048 19.103 20.3048 18C20.3048 16.8972 19.3981 16 18.2833 16C17.1687 16 16.2618 16.8972 16.2618 18Z" fill="black"/>
-          </svg>Add to Cart</span>
-          
+  {% style %}
+      .loop>a:nth-child(2)>div.loop-title{
+        background-image: linear-gradient(180deg, #FF9900 0%, #EA552E 100%);
+      }
+      .loop>a:nth-child(2)>div.loop-content{
+        background-image: linear-gradient(180deg, #26AAE0 0%, #693D90 64.06%);
+      }
+      .loop>a:nth-child(2)>div.loop-total{
+        color: white;
+      }
+  {% endstyle %}
+
+      </a>
+    {% else %}
+      {% for i in (1..3) %}
+        <a href="#" class="featured-collection-item">
+          {% capture current %}{% cycle 1, 2, 3 %}{% endcapture %}
+          {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg placeholder-svg--small' }}
+
+          <p>{{ 'homepage.onboarding.product_title' | t }}</p>
+          <p>{{ 1999 | money }}</p>
+        </a>
+      {% endfor %}
+    {% endfor %}
       </div>
-      <div class="text-center w-full uppercase text-white text-2xs mt-2">
-        free shipping
-      </div>
-      <div class="flex justify-center items-center w-full">
-        {% if section.settings.payments != blank %}
+    <div class="relative flex justify-center items-center flex-col mt-24 bg-all-day rounded-[20px] mx-6">
+      <div class="relative -mt-20">
+        {% if section.settings.guarantee != blank %}
         {% include 'responsive-image' with
-            image: section.settings.payments,
-            max_width: 154,
-            max_height: 20 
+            image: section.settings.guarantee,
+            max_width: 160,
+            max_height: 160 
         %}
         {% endif %}
       </div>
+      <div class="relative text-center font-bold text-white mx-4 mb-3">
+        <p class="text-4xl">60 DAYS</p>
+        <p class="text-xl">"NO STRINGS ATTACHED" MONEY BACK GUARANTEE</p>
+        <p class="text-base mt-5">Tens of thousands of people have used PHEN24 to accelerate their weight loss efforts and help them create a slimmer, sexier body. That's how we know you'll be thrilled with how your body responds to PHEN24. But just in case you're still not sure, we're willing to offer you this guarantee so you can purchase PHEN24 with absolute confidence...</p>
+        <p class="text-base mt-4">Simply try PHEN24 for 60 days — and if it doesn't live up to everything we promised on this page — simply return your bottles (even if they're empty) within 60 days and we will issue you a full refund as soon as we receive your return.</p>
+      </div>
+      <div class="relative flex justify-center place-items-center">
+        <a class=" text-lg justify-center text-black flex w-[300px] items-center py-2 whitespace-nowrap px-8 rounded-20 
+        font-normal bg-green-500 uppercase" href="#some_id">
+        Order <span class="font-bold mr-2"> now</span> <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 6.5L0.75 12.9952L0.750001 0.00480889L12 6.5Z" fill="black"/>
+            </svg>
+        </a>
     </div>
-    
-    </div>
-{% style %}
-    .loop>a:nth-child(2)>div.loop-title{
-      background-image: linear-gradient(180deg, #FF9900 0%, #EA552E 100%);
-    }
-    .loop>a:nth-child(2)>div.loop-content{
-      background-image: linear-gradient(180deg, #26AAE0 0%, #693D90 64.06%);
-    }
-    .loop>a:nth-child(2)>div.loop-total{
-      color: white;
-    }
-{% endstyle %}
-
-    </a>
-  {% else %}
-    {% for i in (1..3) %}
-      <a href="#" class="featured-collection-item">
-        {% capture current %}{% cycle 1, 2, 3 %}{% endcapture %}
-        {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg placeholder-svg--small' }}
-
-        <p>{{ 'homepage.onboarding.product_title' | t }}</p>
-        <p>{{ 1999 | money }}</p>
-      </a>
-    {% endfor %}
-  {% endfor %}
     </div>
 </section>
 
@@ -140,7 +165,13 @@
         "type": "image_picker",
         "id": "image1",
         "label": "Image 1"
-      },{
+      },
+      {
+        "type": "image_picker",
+        "id": "guarantee",
+        "label": "Guarantee Image"
+      },
+      {
         "type": "image_picker",
         "id": "payments",
         "label": "Payment types"
